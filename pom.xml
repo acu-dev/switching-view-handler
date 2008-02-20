@@ -16,6 +16,12 @@
                     <target>1.5</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagBase>https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/tags</tagBase>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -96,4 +102,18 @@
             <snapshots><enabled>false</enabled></snapshots>
         </repository>
     </repositories>
+    <distributionManagement>
+        <repository>
+            <id>jj</id>
+            <url>https://wip004.acu.edu/maven/repository/acu</url>
+        </repository>
+        <snapshotRepository>
+            <id>jj-snapshots</id>
+            <url>https://wip004.acu.edu/maven/repository/acu-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <scm>
+        <connection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/trunk</connection>
+        <developerConnection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/trunk</developerConnection>
+    </scm>
 </project>
