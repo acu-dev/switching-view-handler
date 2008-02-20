@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.acu.wip.jsf.facelets</groupId>
     <artifactId>switching-view-handler</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <build>
         <plugins>
@@ -110,7 +110,7 @@
         </snapshotRepository>
     </distributionManagement>
     <scm>
-        <connection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/tags/switching-view-handler-1.0</connection>
-        <developerConnection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/tags/switching-view-handler-1.0</developerConnection>
+        <connection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/trunk</connection>
+        <developerConnection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/trunk</developerConnection>
     </scm>
 </project>
