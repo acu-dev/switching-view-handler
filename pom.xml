@@ -13,12 +13,6 @@
                     <target>1.5</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <tagBase>https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/tags</tagBase>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -55,62 +49,26 @@
     </dependencies>
     <repositories>
         <repository>
-            <id>acu</id>
-            <name>ACU Releases</name>
-            <url>https://wip004.acu.edu/archiva/repository/acu</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>acu-snapshots</id>
-            <name>ACU Snapshots</name>
-            <url>https://wip004.acu.edu/archiva/repository/acu-snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>3rdp</id>
-            <name>3rd Party Releases</name>
-            <url>https://wip004.acu.edu/archiva/repository/3rdp</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>3rdp-private</id>
+            <url>https://source.acu.edu/mvn/content/repositories/3rdp-private</url>
         </repository>
         <repository>
             <id>java.net</id>
-            <url>http://download.java.net/maven/1</url>
-            <layout>legacy</layout>
-            <snapshots><enabled>false</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>repository.jboss.org</id>
-            <url>http://repository.jboss.com/maven2</url>
-            <snapshots><enabled>false</enabled></snapshots>
+            <url>https://oss.sonatype.org/content/repositories/java.net2</url>
         </repository>
     </repositories>
     <distributionManagement>
         <repository>
-            <id>jj</id>
-            <url>https://wip004.acu.edu/maven/repository/acu</url>
+            <id>acu</id>
+            <url>https://source.acu.edu/mvn/content/repositories/acu</url>
         </repository>
         <snapshotRepository>
-            <id>jj-snapshots</id>
-            <url>https://wip004.acu.edu/maven/repository/acu-snapshots</url>
+            <id>acu-snapshots</id>
+            <url>https://source.acu.edu/mvn/content/repositories/acu-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
     <scm>
-        <connection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/trunk</connection>
-        <developerConnection>scm:svn:https://wip004.acu.edu/repos/wip/jsf/switching-view-handler/trunk</developerConnection>
+        <connection>scm:git:file://${basedir}</connection>
+        <developerConnection>scm:git:file://${basedir}</developerConnection>
     </scm>
 </project>
